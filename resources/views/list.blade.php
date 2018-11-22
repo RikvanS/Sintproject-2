@@ -70,7 +70,7 @@ $(document).ready(function() {
        $('#SaveChanges').show('400');
        $('#AddButton').hide('400');
        $('#id').val(id);
-       console.log(text);
+       //console.log(text);
      });
 
   $(document).on('click', '#addNew', function(event) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
          alert('Vul aub iets in');
        } else {
         $.post('list', {'text': text, '_token':$('input[name=_token]').val()}, function (data) {
-        console.log(data);
+        //console.log(data);
         $('#items').load(location.href + ' #items');
          });
        }
@@ -97,7 +97,7 @@ $(document).ready(function() {
        var id = $('#id').val();
        $.post('delete', {'id' : id, '_token':$('input[name=_token]').val()}, function (data) {
         $('#items').load(location.href + ' #items');
-        console.log(data);     
+        //console.log(data);     
        });      
      });
 
@@ -106,7 +106,7 @@ $(document).ready(function() {
        var value = $.trim($('#AddItem').val());
        $.post('update', {'id' : id,'value' : value, '_token':$('input[name=_token]').val()}, function (data) {
         $('#items').load(location.href + ' #items');
-        console.log(data);
+        //console.log(data);
         });
        });
   });

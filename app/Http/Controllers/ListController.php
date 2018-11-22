@@ -16,10 +16,13 @@ class ListController extends Controller
 
     public function create(request $request) 
     {
-        $item = new Item;
-        $item->item = $request->text;
+        $item = new Item([
+        'item' => $request->get('text'),
+        'user_id' => auth()->user()->id   
+        ]);
+
         $item->save();
-        return 'Done';
+        
     }
 
     public function delete(request $request)
