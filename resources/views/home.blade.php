@@ -14,7 +14,20 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                <p>Ja bij elke nieuwe rage
+                Wil jij hebben wat je ziet
+                Maar zelfs nog bij Pippi Langkous
+                Kreeg jij ontslag, en wel subiet!
+
+                Voorzien van twee maal linker handen
+                Koekenbakker, brekebeen!
+                Vlekken, gaten, builen, scherven
+                of de 'down the drain'
+
+                Zit de Sint je nou te plagen?
+                Of zijn het echt flaters bij de vleet?
+                Je mag het aan de Pieten vragen...
+                Voor jou een vraag voor hen een weet...</p>
                 </div>
             </div>
         </div>

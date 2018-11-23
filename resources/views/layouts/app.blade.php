@@ -41,6 +41,9 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">About</a>
+                        </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
@@ -50,6 +53,9 @@
                                 @endif
                             </li>
                         @else
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">About</a>
+                        </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="{{ route('list') }}">Maak je lijstje</a>
                         </li>
