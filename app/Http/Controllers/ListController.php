@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Item;
 
@@ -10,6 +11,7 @@ class ListController extends Controller
 
     public function index() 
     {   
+        //$items = DB::table('items')->where('user_id')->value(auth()->user()->id);
         $items = Item::all();
         return view('list', compact('items'));
     }

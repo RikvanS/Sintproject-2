@@ -14,3 +14,7 @@ Tevens is de link momenteel nog benaderbaar voor niet ingelogde gebruikers. Dit 
 In de volgende versie moet een wishlist uniek zijn voor een gebruiker.
 De gebruiker moet enkel zijn eigen wishlist kunnen zien (en bewerken).
 De wishlist moet pas benaderbaar zijn na inlog (Om koppeling met user id te realiseren voor het tonen van eigen wishlist)
+
+------------
+16:15
+Model, migration, en controllers bijgewerkt om koppeling aan user id te realiseren per item. Elk item wordt nu in DB gekoppeld aan de ingelogde user.
